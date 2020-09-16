@@ -1,0 +1,94 @@
+header {
+  color: $white;
+  text-align: center;
+  padding: 60px 0;
+  height: 280px;
+  position: relative;
+  background-color: $dark;
+  overflow-x: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 0;
+    height: 8px;
+    background-image: linear-gradient(to right, red, orange, yellow, lightgreen, lime, lightblue);
+  }
+
+  @include breakpoints(md) {
+    height: 250px;
+  }
+
+  .content {
+    position: relative;
+    z-index: 3;
+
+    h1 {
+      letter-spacing: 20px;
+      word-spacing: 0 !important;
+      font-weight: 500;
+      text-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+      transform: translateX(10px);
+
+      @include breakpoints(sm) {
+        letter-spacing: 30px;
+      }
+    }
+
+    p {
+      font-weight: 200;
+      letter-spacing: 1px;
+      word-spacing: 1px;
+      // font-size: 0.875rem; //14px
+      font-size: 0.9375rem; //15px
+
+      @include breakpoints(sm) {
+        letter-spacing: 2px;
+        word-spacing: 2px;
+      }
+    }
+  }
+
+  .deco {
+    position: absolute;
+  }
+
+  .deco1 {
+    top: -40px;
+    left: 60px;
+    font-size: 100px;
+    transform: rotate(35deg);
+    color: #303030;
+
+    @include breakpoints(lg) {
+      font-size: 200px;
+    }
+  }
+
+  .deco2 {
+    font-size: 150px;
+    right: 0;
+    bottom: 0;
+    color: #303030;
+
+    @include breakpoints(lg) {
+      font-size: 300px;
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+}
