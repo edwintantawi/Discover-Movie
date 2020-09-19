@@ -176,7 +176,6 @@ main section#recomendation .card-item {
   position: relative;
   -webkit-transition: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
   transition: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
-  border-radius: 6px;
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;

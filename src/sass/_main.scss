@@ -58,7 +58,7 @@ main {
       display: inline-block;
       position: relative;
       transition: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
-      border-radius: 6px;
+      // border-radius: 6px;
       overflow: hidden;
       transition: 1s;
       width: 160px;
@@ -75,6 +75,7 @@ main {
         .image {
           filter: blur(3px);
           transition: 0.3s;
+          // border-radius: 6px;
         }
       }
 
