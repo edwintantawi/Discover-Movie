@@ -1,11 +1,11 @@
 header {
+  overflow: hidden;
   color: $white;
   text-align: center;
   padding: 60px 0;
   height: 280px;
   position: relative;
   background-color: $dark;
-  overflow-x: hidden;
 
   display: flex;
   justify-content: center;
@@ -73,7 +73,7 @@ header {
   .deco2 {
     font-size: 150px;
     right: 0;
-    bottom: 0;
+    bottom: -40px;
     color: #303030;
 
     @include breakpoints(lg) {

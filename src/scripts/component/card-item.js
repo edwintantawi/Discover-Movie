@@ -6,17 +6,19 @@ class CardItem extends HTMLElement {
 
   render() {
     this.innerHTML = `
-    <div class="card-item">
-              <div class="image" style='background-image: url(${this._detail.poster_path});'></div>
-              <div class="div desc">
-                <h3>${this._detail.title}</h3>
-                <p>${this._detail.overview}</p>
-                <small>
-                ${this._detail.release_date}
-                </small>
-              </div>
-            </div>
-    `;
+    
+      <div class="card-item">
+        <img class="image" src="https://image.tmdb.org/t/p/w500${this._detail.poster_path}">
+        <img src="/src/assets/images/eye.svg" class="view-ico">
+      </div>
+
+      `;
+
+
+
+
+
+
   }
 }
 
