@@ -8,6 +8,7 @@
 
 body {
   background-color: $white;
+  // background-image: linear-gradient(to bottom, white, rgb(149, 211, 34));
   overflow-x: hidden;
 
   &::-webkit-scrollbar {

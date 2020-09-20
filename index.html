@@ -50,36 +50,65 @@
 
   <main>
     <!-- SEARC -->
-    <section id="search-menu">
+    <div id="search-menu">
+      <div class="container">
+
+        <div class="searchbar">
+          <input type="text" name="search" id="input-search" placeholder="Search Your Favorite Movie ..." required>
+          <button id="btn-search"><i class="fas fa-search"></i></button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RECOMENDATION -->
+    <section id="search">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="searchbar">
-              <input type="text" name="search" id="input-search" placeholder="Search Your Favorite Movie ..." required>
-              <button id="btn-search"><i class="fas fa-search"></i></button>
+            <h3>Search Result's..</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card-list card-search dragscroll">
+              <!-- RENDER -->
             </div>
           </div>
         </div>
-      </div>
     </section>
 
-    <!-- SEARCH RESULT -->
-    <section id="recomendation">
+
+    <!-- POPULAR MOVIE -->
+    <section id="popularmovie">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3>Recomendation for you..</h3>
+            <h3>Popular Movie..</h3>
           </div>
         </div>
         <div class="row">
           <div class="col-12">
-
-            <div class="card-list dragscroll">
-
-
-
+            <div class="card-list card-popular-movie dragscroll">
+              <!-- RENDER -->
             </div>
+          </div>
+        </div>
+    </section>
 
+    <!-- TOP RATED MOVIE -->
+    <section id="toprated">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>Top rated movie..</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card-list card-toprated-movie dragscroll">
+              <!-- RENDER -->
+            </div>
           </div>
         </div>
     </section>

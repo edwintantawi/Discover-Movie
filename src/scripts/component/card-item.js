@@ -13,12 +13,6 @@ class CardItem extends HTMLElement {
       </div>
 
       `;
-
-
-
-
-
-
   }
 }
 

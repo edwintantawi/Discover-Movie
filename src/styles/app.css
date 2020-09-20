@@ -25,7 +25,7 @@ header {
   color: #ffff;
   text-align: center;
   padding: 60px 0;
-  height: 280px;
+  height: 320px !important;
   position: relative;
   background-color: #242424;
   display: -webkit-box;
@@ -121,7 +121,7 @@ header .deco2 {
   }
 }
 
-main section#search-menu .searchbar {
+main #search-menu .searchbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -132,16 +132,17 @@ main section#search-menu .searchbar {
           box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4);
 }
 
-main section#search-menu .searchbar input {
+main #search-menu .searchbar input {
   width: 100%;
   outline: none;
   border: none;
+  background-color: #ffff !important;
   padding: 15px 30px 14px;
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
 
-main section#search-menu .searchbar button {
+main #search-menu .searchbar button {
   width: 100px;
   height: 70px;
   outline: none;
@@ -152,30 +153,38 @@ main section#search-menu .searchbar button {
   transition: .5s ease-in-out;
 }
 
-main section#search-menu .searchbar button:hover {
+main #search-menu .searchbar button:hover {
   font-size: 25px;
+  margin: 0;
 }
 
-main section#recomendation {
-  padding: 100px 0;
+main section {
+  padding: 40px 0;
 }
 
-main section#recomendation .card-list {
+main section h3 {
+  font-size: 20px;
+  color: #242424;
+  font-weight: 400;
+}
+
+main section .card-list {
   overflow: auto;
   white-space: nowrap;
   cursor: -webkit-grab;
   cursor: grab;
 }
 
-main section#recomendation .card-list::-webkit-scrollbar {
+main section .card-list::-webkit-scrollbar {
   visibility: hidden;
 }
 
-main section#recomendation .card-item {
+main section .card-item {
   display: inline-block;
   position: relative;
   -webkit-transition: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
   transition: 0.2s cubic-bezier(0.47, 0, 0.745, 0.715);
+  border-radius: 6px;
   overflow: hidden;
   -webkit-transition: 1s;
   transition: 1s;
@@ -183,24 +192,25 @@ main section#recomendation .card-item {
   margin: 4px;
 }
 
-main section#recomendation .card-item:hover {
+main section .card-item:hover {
   cursor: pointer;
 }
 
-main section#recomendation .card-item:hover .view-ico {
+main section .card-item:hover .view-ico {
   visibility: visible;
   -webkit-filter: none;
           filter: none;
 }
 
-main section#recomendation .card-item:hover .image {
+main section .card-item:hover .image {
   -webkit-filter: blur(3px);
           filter: blur(3px);
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  border-radius: 6px;
 }
 
-main section#recomendation .card-item .view-ico {
+main section .card-item .view-ico {
   visibility: hidden;
   position: absolute;
   -webkit-transform: translateX(50%) translateY(50%);
@@ -210,7 +220,14 @@ main section#recomendation .card-item .view-ico {
   width: 60px;
 }
 
-main section#recomendation .card-item img {
+main section .card-item img {
   width: 160px;
+  height: 240px;
+}
+
+main section#search {
+  margin-top: 50px;
+  display: none;
+  background-color: rgba(128, 128, 128, 0.1);
 }
 /*# sourceMappingURL=app.css.map */
